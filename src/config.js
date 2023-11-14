@@ -6,15 +6,15 @@ export function getConfig() {
   // If this resolves to `null`, the API page changes to show some helpful info about what to do
   // with the audience.
   const audience =
-    process.env.AUDIENCE && process.env.AUDIENCE !== "YOUR_API_IDENTIFIER"
+    process.env.REACT_APP_AUDIENCE && process.env.REACT_APP_AUDIENCE !== "YOUR_API_IDENTIFIER"
       ? process.env.AUDIENCE
       : null;
       console.log(audience)
-      console.log(process.env.DOMAIN)
+      console.log(process.env.REACT_APP_DOMAIN)
 
   return {
-    domain: process.env.DOMAIN,
-    clientId: process.env.CLIENTID,
+    domain: process.env.REACT_APP_DOMAIN,
+    clientId: process.env.REACT_APP_CLIENTID,
     ...(audience ? { audience } : null),
   };
 }
