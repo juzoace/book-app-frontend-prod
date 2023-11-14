@@ -2,6 +2,7 @@ import axios from "axios";
 
 
 const graphqlEndpoint = `${process.env.APIDOMAIN}/graphql`;
+console.log(graphqlEndpoint)
 
 export const getAllBooks = async (token) => {
   
