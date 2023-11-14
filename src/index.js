@@ -18,12 +18,12 @@ const onRedirectCallback = (appState) => {
 const config = getConfig();
 
 const providerConfig = {
-  domain: config.domain,
-  clientId: config.clientId,
+  domain:`dev-st4zy53myhpbn3os.us.auth0.com`,
+  clientId: `2x5gOPz000GzXalQK1XWjaLQo1nYZZPB`,
   onRedirectCallback,
   authorizationParams: {
     redirect_uri: window.location.origin,
-    ...(config.audience ? { audience: config.audience } : null),
+    ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com`? { audience: `https://book-api-auth0-e4ad716ccb6a.herokuapp.com` } : null),
   },
 };
 

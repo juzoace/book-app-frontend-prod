@@ -5,16 +5,16 @@ export function getConfig() {
   // don't have an API).
   // If this resolves to `null`, the API page changes to show some helpful info about what to do
   // with the audience.
-  const audience =
-    process.env.REACT_APP_AUDIENCE && process.env.REACT_APP_AUDIENCE !== "YOUR_API_IDENTIFIER"
-      ? process.env.AUDIENCE
-      : null;
-      console.log(audience)
-      console.log(process.env.REACT_APP_DOMAIN)
+
+  
+  const audience = 'https://book-api-auth0-e4ad716ccb6a.herokuapp.com'
+    // process.env.REACT_APP_AUDIENCE && process.env.REACT_APP_AUDIENCE !== "YOUR_API_IDENTIFIER"
+    //   ? process.env.AUDIENCE
+    //   : null;
 
   return {
-    domain: process.env.REACT_APP_DOMAIN,
-    clientId: process.env.REACT_APP_CLIENTID,
-    ...(audience ? { audience } : null),
+    domain: `dev-st4zy53myhpbn3os.us.auth0.com`,
+    clientId: `2x5gOPz000GzXalQK1XWjaLQo1nYZZPB`,
+    ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com` ? { audience } : null),
   };
 }
