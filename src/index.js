@@ -22,7 +22,7 @@ const providerConfig = {
   clientId: `2x5gOPz000GzXalQK1XWjaLQo1nYZZPB`,
   onRedirectCallback,
   authorizationParams: {
-    redirect_uri: window.location.origin,
+    redirect_uri: "https://book-app-frontend-prod-2.vercel.app/",
     ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com`? { audience: `https://book-api-auth0-e4ad716ccb6a.herokuapp.com` } : null),
   },
 };
