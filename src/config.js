@@ -14,7 +14,7 @@ export function getConfig() {
 
   return {
     domain: `dev-st4zy53myhpbn3os.us.auth0.com`,
-    clientId: `2x5gOPz000GzXalQK1XWjaLQo1nYZZPB`,
+    clientId: `jv4vyLvq9sNnHSlv7PlPnZhKmod05Q8R`,
     ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com` ? { audience } : null),
   };
 }
