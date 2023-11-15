@@ -41,6 +41,7 @@ export const getAllBooks = async (token) => {
 
 export const createBook = async (name, description, token) => {
   const accessToken = token;
+  console.log(accessToken);
     try {
       const response = await axios.post(
         graphqlEndpoint,
