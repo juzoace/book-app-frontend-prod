@@ -61,6 +61,7 @@ const Hero = () => {
   };
 
   const createNewBook = async () => {
+    console.log("Tried to create new book");
     try {
       setIsLoading(true);
       await createBook(newBook.name, newBook.description, accessToken);
