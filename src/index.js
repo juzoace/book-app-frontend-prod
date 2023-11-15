@@ -23,7 +23,7 @@ const providerConfig = {
   onRedirectCallback,
   authorizationParams: {
     redirect_uri: "https://book-app-frontend-prod-2.vercel.app/",
-    ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com`? { audience: `https://book-api-auth0-e4ad716ccb6a.herokuapp.com` } : null),
+    ...(`https://book-api-auth0-e4ad716ccb6a.herokuapp.com/graphql`? { audience: `https://book-api-auth0-e4ad716ccb6a.herokuapp.com/graphql` } : null),
   },
 };
 
