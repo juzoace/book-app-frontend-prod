@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const graphqlEndpoint = `${process.env.APIDOMAIN}/graphql`;
+const graphqlEndpoint = `https://book-api-auth0-e4ad716ccb6a.herokuapp.com/graphql`;
 console.log(graphqlEndpoint)
 
 export const getAllBooks = async (token) => {
